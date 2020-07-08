@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="App.master.cs" Inherits="TokoBeDia.View.App" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/font-awesome/css/all.css">
+
+    <link rel="icon" href="../Assets/images/logo.png" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <asp:ContentPlaceHolder ID="content" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <script src="<%= ResolveUrl("~/Assets/js/jquery-3.2.1.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Assets/js/popper.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Assets/js/bootstrap.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Assets/js/sweetalert2.all.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Assets/font-awesome/js/all.js") %>"></script>
+    <asp:ContentPlaceHolder ID="script" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

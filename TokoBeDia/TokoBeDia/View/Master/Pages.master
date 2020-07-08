@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/View/App.Master" AutoEventWireup="true" CodeBehind="Pages.master.cs" Inherits="TokoBeDia.View.Master.Guest" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
+
+    <form runat="server">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="<%= ResolveUrl("~/View/Pages/Home.aspx") %>">
+                <img class="mr-4 mb-4" src="<%= ResolveUrl("~/Assets/images/logo.png") %>" alt="" width="100" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li id="navproduct" class="nav-item" runat="server">
+                        <a class="nav-link" href="<%= ResolveUrl("~/View/Pages/Product.aspx") %>">Product</a>
+                    </li>
+                    <li id="navproductlist" class="nav-item" runat="server" visible="false">
+                        <a class="nav-link" href="<%= ResolveUrl("~/View/Pages/Admin/ProductTypes.aspx") %>">Product Type</a>
+                    </li>
+                    <li id="navpayment" class="nav-item" runat="server" visible="false">
+                        <a class="nav-link" href="<%= ResolveUrl("~/View/Pages/Admin/PaymentTypes.aspx") %>">Payment Type</a>
+                    </li>
+                    <li id="navuser" class="nav-item" runat="server" visible="false">
+                        <a class="nav-link" href="<%= ResolveUrl("~/View/Pages/Admin/Users.aspx") %>">Users</a>
+                    </li>
+                    
+                    <li id="navcart" class="nav-item" runat="server" visible="false">
+                        <a class="nav-link" href="<%= ResolveUrl("~/View/Pages/Users/Cart.aspx") %>">Cart</a>
+                    </li>
+                    <li id="navprofile" class="nav-item dropdown" runat="server">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div id="navreport" runat="server" visible="false">
+                                <a class="dropdown-item" href="<%= ResolveUrl("~/View/Pages/Admin/Report.aspx") %>">
+                                    <b>Transaction Report</b>
+                                </a>
+                            </div>
+                            <div id="navhistory" runat="server" visible="false">
+                                <a class="dropdown-item" href="<%= ResolveUrl("~/View/Pages/Users/History.aspx") %>">
+                                    <b>Transaction History</b>
+                                </a>
+                            </div>
+                            <a class="dropdown-item" href="<%= ResolveUrl("~/View/Pages/Profile.aspx") %>">Setting</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="<%= ResolveUrl("~/View/Pages/ChangePassword.aspx") %>">Change Password</a>
+                        </div>
+                    </li>
+                </ul>
+                <span class="navbar-text" id="navlogin" runat="server">
+                    <a class="nav-link" href="<%= ResolveUrl("~/View/Pages/Login.aspx") %>">Login</a>
+                </span>
+                <span class="navbar-text" id="navlogout" runat="server">
+                    <asp:Button ID="Logout" OnClick="Logout_Click" Text="Logout" CssClass="btn btn-danger btn-sm" runat="server"/>
+                </span>
+            </div>
+        </nav>
+        <asp:ContentPlaceHolder ID="main" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="script" runat="server">
+    <asp:ContentPlaceHolder ID="script" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

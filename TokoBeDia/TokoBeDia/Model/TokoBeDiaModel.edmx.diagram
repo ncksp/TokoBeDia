@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6bad9a90794a41aea4972abf0ee1fe7b" Name="Diagram1">
+        <EntityTypeShape EntityType="TokoBeDiaModel.Cart" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TokoBeDiaModel.DetailTransaction" Width="1.5" PointX="7.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TokoBeDiaModel.HeaderTransaction" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TokoBeDiaModel.PaymentType" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TokoBeDiaModel.Product" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TokoBeDiaModel.ProductType" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TokoBeDiaModel.Role" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TokoBeDiaModel.User" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="TokoBeDiaModel.FK__Carts__ProductID__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="TokoBeDiaModel.FK__Carts__UserID__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="TokoBeDiaModel.FK__DetailTra__Produ__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="TokoBeDiaModel.FK__DetailTra__Trans__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="TokoBeDiaModel.FK__HeaderTra__Payme__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="TokoBeDiaModel.FK__HeaderTra__UserI__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="TokoBeDiaModel.FK__Product__Product__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="TokoBeDiaModel.FK__Users__RoleID__2C3393D0" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
